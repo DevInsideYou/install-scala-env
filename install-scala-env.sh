@@ -10,7 +10,7 @@ curl -fLo cs https://git.io/coursier-cli-"$(uname | tr LD ld)"
 chmod +x cs
 
 # setup environment
-./cs setup --yes --jvm graalvm-ce-java8 --apps ammonite,bloop,cs,giter8,sbt,scala,scalafmt
+./cs setup --yes --jvm graalvm-ce-java8 --apps ammonite,bloop,cs,giter8,sbt,scala,scala3-repl,scalafmt
 
 # remove the temporary native-image
 rm cs
