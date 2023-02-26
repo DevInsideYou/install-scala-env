@@ -4,7 +4,7 @@
 rm $0
 
 # dowbload temporary coursier native-image to bootstrap the installation
-curl -fLo cs https://git.io/coursier-cli-"$(uname | tr LD ld)"
+curl -fL "https://github.com/coursier/launchers/raw/master/cs-x86_64-pc-linux.gz" | gzip -d > cs
 
 # make it executable
 chmod +x cs
